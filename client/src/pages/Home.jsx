@@ -183,7 +183,13 @@ export const Home = () => {
         <img src={sd} alt="" />
       </div>
       <div>
-        <img src={asset9} alt="" />
+        <div className="absolute">
+          <img className="  " src={asset9} alt="" />
+        </div>
+        <div className=" bg-white w-[50%]  h-[40%] justify-center relative ">
+          <p>hgfryjhgf</p>
+          <h1>opiukhjgfvcbvb</h1>
+        </div>
       </div>
     </div>
   );
