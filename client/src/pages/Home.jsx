@@ -11,6 +11,7 @@ import { LiaGreaterThanSolid } from "react-icons/lia";
 import bgvideo from "../assets/res/bgvideo.mp4";
 import asset9 from "../assets/res/asset9.jpeg";
 import sd from "../assets/res/sd.jpg";
+import Footer from "../components/footer/footer";
 
 export const Home = () => {
   return (
@@ -182,14 +183,42 @@ export const Home = () => {
       <div>
         <img src={sd} alt="" />
       </div>
-      <div>
-        <div className="absolute">
+
+      <div className="relative">
+        <div>
           <img className="  " src={asset9} alt="" />
         </div>
-        <div className=" bg-white w-[50%]  h-[40%] justify-center relative ">
-          <p>hgfryjhgf</p>
-          <h1>opiukhjgfvcbvb</h1>
+        <div className="grid place-items-center">
+          <div className=" bg-white absolute p-[60px] max-w-[900px] h-[75%] pla bottom-0 ">
+            <h1 className="font-como text-[64px] text-center">
+              REQUEST A VISIT
+            </h1>
+            <div className="flex  flex-col gap-10 columns-2">
+              <input
+                className=" border w-full"
+                type="text"
+                placeholder="FULL NAME"
+              />
+              <input type="email" placeholder="EMAIL" />
+              <div className="flex">
+                <input type="date" />
+                <input type="time" placeholder="TIME" />
+              </div>
+            </div>
+
+            <textarea
+              className="mt-10"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="MESSAGE"
+            ></textarea>
+          </div>
         </div>
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
