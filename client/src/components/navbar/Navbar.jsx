@@ -5,7 +5,8 @@ import { LuInstagram } from "react-icons/lu";
 import { GrTwitter } from "react-icons/gr";
 import { SiWhatsapp } from "react-icons/si";
 import logo from "../../assets/res/mainlogo.png";
-const Navbar = () => {
+import { Link } from "react-router-dom";
+function Navbar() {
   return (
     <nav className="flex justify-between items-center p-10">
       <div className="flex gap-5">
@@ -15,9 +16,19 @@ const Navbar = () => {
         <SiWhatsapp className="text-[#2e3a1a] text-2xl" />
       </div>
       <div className="flex items-center text-white gap-6 font-rale">
-        <p>HOME</p>
-        <p>ABOUT</p>
-        <p>PROPERTIES</p>
+        <div>
+          <p>HOME</p>
+        </div>
+
+        <div>
+          <p>ABOUT</p>
+        </div>
+        <Link to={"/properties"}>
+          <div>
+            <p>PROPERTIES</p>
+          </div>
+        </Link>
+
         <img className="w-[10rem]" src={logo} alt="" />
         <p>GALLERY</p>
         <p>TEAM</p>
@@ -27,6 +38,6 @@ const Navbar = () => {
       <Sidebar />
     </nav>
   );
-};
+}
 
 export default Navbar;
