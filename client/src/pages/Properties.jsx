@@ -3,6 +3,7 @@ import asset4 from "../assets/res/asset4.jpeg";
 import asset5 from "../assets/res/asset5.jpeg";
 import asset6 from "../assets/res/asset6.jpeg";
 import asset7 from "../assets/res/asset7.jpeg";
+import Footer from "../components/footer/footer";
 function Properties() {
   return (
     <div>
@@ -64,6 +65,9 @@ function Properties() {
             VIEW MORE
           </h4>
         </div>
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
