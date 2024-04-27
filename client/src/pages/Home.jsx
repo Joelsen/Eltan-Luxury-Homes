@@ -186,34 +186,55 @@ export const Home = () => {
 
       <div className="relative">
         <div>
-          <img className="  " src={asset9} alt="" />
+          <video
+            autoPlay
+            muted
+            loop
+            id="bgvideo"
+            className="w-[100vw] aspect-auto"
+          >
+            <source src={bgvideo} type="video/mp4" />
+          </video>
         </div>
         <div className="grid place-items-center">
-          <div className=" bg-white absolute p-[60px] max-w-[900px] h-[75%] pla bottom-0 ">
+          <div className=" bg-white p-[60px] ">
             <h1 className="font-como text-[64px] text-center">
               REQUEST A VISIT
             </h1>
             <div className="flex  flex-col gap-10 columns-2">
               <input
-                className=" border w-full"
+                className="border-b-2 p-4 outline-none  tracking-[0.7rem]  w-full"
                 type="text"
                 placeholder="FULL NAME"
               />
-              <input type="email" placeholder="EMAIL" />
-              <div className="flex">
-                <input type="date" />
-                <input type="time" placeholder="TIME" />
+              <input
+                type="email"
+                className="border-b-2 p-4 outline-none  tracking-[0.7rem]  w-full"
+                placeholder="EMAIL"
+              />
+              <div className="flex gap-4">
+                <input
+                  className="border-b-2 outline-none cursor-pointer p-4 tracking-[0.7rem]  w-1/2"
+                  type="date"
+                />
+                <input
+                  className="border-b-2 outline-none cursor-pointer p-4 tracking-[0.7rem]  w-1/2"
+                  type="time"
+                  placeholder="TIME"
+                />
               </div>
             </div>
 
             <textarea
-              className="mt-10"
               name=""
+              className="border-b-2 p-4 outline-none  tracking-[0.7rem]  w-full"
               id=""
               cols="30"
-              rows="10"
               placeholder="MESSAGE"
             ></textarea>
+            <button className="text-center p-4 mt-4 bg-[#cf2e2e]  border-4  w-full">
+              CONTACT
+            </button>
           </div>
         </div>
       </div>
