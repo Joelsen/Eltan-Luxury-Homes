@@ -127,34 +127,40 @@ export const Home = () => {
             <h1 className="font-rale text-[#ab0a1f] tracking-widest">
               WHAT ELTAN LUXURY HOMES OFFERS
             </h1>
-            <div className="flex  gap-5 justify-center items-center ">
-              <div className="flex  items-center justify-center font-como text-[#615e5e] text-[20px] font-normal">
-                <LiaGreaterThanSolid />
-                Good roads
+            <section className="grid grid-cols-3 gap-8 my-10 items-center justify-center">
+              <div>
+                <div className="flex  items-center justify-center font-como text-[#615e5e]  font-normal">
+                  <LiaGreaterThanSolid />
+                  Good roads
+                </div>
+                <div className="flex items-center justify-center font-como text-[#615e5e] font-normal">
+                  <LiaGreaterThanSolid />
+                  Street lights
+                </div>
               </div>
-              <div className="flex items-center justify-center">
-                <LiaGreaterThanSolid />
-                Street lights
+
+              <div>
+                <div className="flex items-center justify-center font-como text-[#615e5e] font-normal">
+                  <LiaGreaterThanSolid />
+                  Good Drainage
+                </div>
+
+                <div className="flex items-center  justify-center font-como text-[#615e5e] font normal  ">
+                  <LiaGreaterThanSolid />
+                  Serene environment
+                </div>
               </div>
-              <div className="flex items-center justify-center">
-                <LiaGreaterThanSolid />
-                Good Drainage
+              <div>
+                <div className="flex items-center  justify-center font-como text-[#615e5e] font-normal">
+                  <LiaGreaterThanSolid />
+                  24hrs power supply
+                </div>
+                <div className="flex items-center  justify-center font-como text-[#615e5e] font-normal">
+                  <LiaGreaterThanSolid />
+                  24hrs armed security
+                </div>
               </div>
-            </div>
-            <div className="flex  gap-5 justify-center items-center align-middle ">
-              <h1 className="flex items-center  justify-center  ">
-                <LiaGreaterThanSolid />
-                Serene environment
-              </h1>
-              <h1 className="flex items-center  justify-center">
-                <LiaGreaterThanSolid />
-                24hrs power supply
-              </h1>
-              <h1 className="flex items-center  justify-center">
-                <LiaGreaterThanSolid />
-                24hrs armed security
-              </h1>
-            </div>
+            </section>
           </div>
         </div>
         <div id="redbg">
