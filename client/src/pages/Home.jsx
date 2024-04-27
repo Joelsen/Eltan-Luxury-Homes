@@ -238,7 +238,7 @@ export const Home = () => {
               cols="30"
               placeholder="MESSAGE"
             ></textarea>
-            <button className="text-center p-4 mt-4 bg-[#cf2e2e]  border-4  w-full">
+            <button className="text-center p-4 mt-4 bg-[#cf2e2e]  border-4  w-full text-white font-bold hover:bg-white hover:text-[#cf2e2e] transition-all duration-300 cursor-pointer">
               CONTACT
             </button>
           </div>
