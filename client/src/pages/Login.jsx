@@ -31,8 +31,8 @@ const Login = () => {
   };
 
   return (
-    <div className="">
-      <div className="items-start">
+    <div className="items-center pt-[50px] ">
+      <div className="">
         <Link to={"/"}>
           <img className=" w-[10%] ml-[10%] mt-10" src={logo} alt="" />
         </Link>{" "}
@@ -44,7 +44,7 @@ const Login = () => {
           </div>
           <section className="w-[24rem] mb-[10px] flex flex-col gap-8">
             <div className="bg-white w-full pl-4 outline-none focus:border-black valid:border-[#017358]">
-              <h1 className="text-left pb-3 text-[#001712] text-sm font-medium font-como">
+              <h1 className="text-left pb-3 text-[#001712] text-sm font-medium font-rale">
                 Email Address
               </h1>
               <input
@@ -56,7 +56,7 @@ const Login = () => {
               />
             </div>
             <div className="bg-white w-full pl-4 outline-none">
-              <h1 className="text-left pb-3 text-[#001712] text-sm font-medium font-como">
+              <h1 className="text-left pb-3 text-[#001712] text-sm font-medium font-rale">
                 Password (minimum of 8 characters)
               </h1>
               <div className="flex border border-[#9DA39F] rounded-lg px-2 py-3 items-center  w-full justify-between focus-within:border-black valid:border-[#017358]">
@@ -66,22 +66,22 @@ const Login = () => {
                   placeholder="Enter Password"
                 />
               </div>
-              <p className="pt-2 text-[0.875rem] font-como">
+              <p className="pt-2 text-[0.875rem] font-rale">
                 (Use alphabets, numbers and characters)
               </p>
             </div>
             <div className="flex justify-center">
-              <button className="bg-[#2e3a1a] rounded-full border w-20 items-center  font-como ">
+              <button className="bg-[#2e3a1a] rounded-full border w-20 items-center  font-rale ">
                 Login
               </button>
             </div>
           </section>
           <div className="w-[22rem] mb-[10px] flex flex-col gap-8 text-base font-normal">
-            <h1 className="font-como">
+            <h1 className="font-rale ">
               Don’t have an account,{" "}
               <Link>
                 {" "}
-                <span className=""> Register here</span>
+                <span className="text-[red]"> Register here</span>
               </Link>
             </h1>
           </div>
