@@ -71,7 +71,7 @@ const Login = () => {
               </p>
             </div>
             <div className="flex justify-center">
-              <button className="bg-[#2e3a1a] rounded-full border w-20 items-center  font-rale ">
+              <button className="bg-[#2e3a1a] rounded-full border justify-center items-center flex font-rale text-white p-2 w-[40%] ">
                 Login
               </button>
             </div>
