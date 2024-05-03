@@ -49,7 +49,7 @@ export const Home = () => {
       </section>
       <section>
         {/* story section */}
-        <div className="mt-[10rem]">
+        <div id="story" className="mt-[10rem]">
           <Story />
         </div>
         <div className="flex justify-center mr-[20%] gap-[10%] pt-[10%]">

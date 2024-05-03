@@ -7,6 +7,7 @@ import Login from "./pages/Login";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Signup from "./pages/Signup";
 import Properties from "./pages/Properties";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           {/* {/ <Route path='/about' element={<About />} /> */}
           <Route path="/properties" element={<Properties />} />
+          <Route path="/profile" element={<Profile />} />
           {/* <Route path='/contact' element={<Contact />} /> */}
           {/* <Route path='/signup' element={<Signup />} /> */}
           {/* <Route path='/team' element={<Team/>} /> } */}

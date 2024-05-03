@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Sidebar from "../sidebar/sidebar";
 import { IoLogoFacebook } from "react-icons/io5";
 import { LuInstagram } from "react-icons/lu";
@@ -7,6 +7,16 @@ import { SiWhatsapp } from "react-icons/si";
 import logo from "../../assets/res/mainlogo.png";
 import { Link } from "react-router-dom";
 function Navbar() {
+  const [loggedin, setLoggedin] = useState(false);
+  useEffect(() => {
+    if (localStorage.getItem("user")) {
+      setLoggedin(localStorage.getItem("user"));
+    }
+  });
+  const logout = () => {
+    localStorage.removeItem("user");
+    setLoggedin(false);
+  };
   return (
     <nav className="flex justify-between items-center p-10">
       <div className="flex gap-5">
@@ -21,7 +31,7 @@ function Navbar() {
         </div>
 
         <div>
-          <p>ABOUT</p>
+          <a href="#story"> ABOUT</a>
         </div>
         <Link to={"/properties"}>
           <div>
@@ -34,6 +44,14 @@ function Navbar() {
         <p>TEAM</p>
         <p>CONTACT</p>
       </div>
+      {loggedin && (
+        <div>
+          <p className="text-white">Welcome {loggedin} </p>
+          <p onClick={logout} className="text-white cursor-pointer">
+            Log Out{" "}
+          </p>
+        </div>
+      )}
 
       <Sidebar />
     </nav>

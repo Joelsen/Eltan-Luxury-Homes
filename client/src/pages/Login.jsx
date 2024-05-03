@@ -1,29 +1,21 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/res/mainlogo.png";
 
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+  const Navigate = useNavigate();
   function handleSubmit(e) {
-    e.preventDefault();
-    console.log(email);
-    console.log(password);
-
-    fetch("http://localhost:4000/user", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email: email,
-        password: password,
-      }),
-    })
-      .then((res) => res.json())
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
+    if (email === "sammyjones@gmail.com") {
+      localStorage.setItem("user", "Samuel");
+      Navigate("/");
+    }
+    if (email === "joelwilson@gmail.com") {
+      localStorage.setItem("user", "Joel");
+      Navigate("/");
+    }
   }
 
   const toggleShowPassword = () => {
@@ -37,7 +29,7 @@ const Login = () => {
           <img className=" w-[10%] ml-[10%] mt-10" src={logo} alt="" />
         </Link>{" "}
       </div>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="rounded-lg flex flex-col border w-[32%] mx-auto mb-10 items-center gap-6 shadow-[2px_2px_10px_2px_rgba(0,0,0,0.2)]">
           <div className="text-[2.125rem] w-full  text-center font-medium pt-4">
             <p className="font-como">Login</p>
@@ -70,10 +62,15 @@ const Login = () => {
                 (Use alphabets, numbers and characters)
               </p>
             </div>
-            <div className="flex justify-center">
-              <button className="bg-[#2e3a1a] rounded-full border justify-center items-center flex font-rale text-white p-2 w-[40%] ">
-                Login
-              </button>
+            <div>
+              <div className="flex justify-center">
+                <button
+                  type="submit"
+                  className="bg-[#2e3a1a] rounded-full border justify-center items-center flex font-rale text-white p-2 w-[40%] "
+                >
+                  Login
+                </button>
+              </div>
             </div>
           </section>
           <div className="w-[22rem] mb-[10px] flex flex-col gap-8 text-base font-normal">
