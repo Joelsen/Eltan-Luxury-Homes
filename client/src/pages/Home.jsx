@@ -54,29 +54,11 @@ export const Home = () => {
         </div>
         <div className="flex justify-center mr-[20%] gap-[10%] pt-[10%]">
           <div className="  pl-[0.1%]">
-            <h1 className="font-como text-[28px] font-medium not-italic">
-              WE PRIDE OURSELVES AS
-            </h1>
-            <h1 className="font-como text-[28px] font-medium not-italic">
-              LEADERS IN THE PROPERTY
-            </h1>
-            <h1 className="font-como text-[28px] font-medium not-italic">
-              DEVELOPMENT INDUSTRY AS
-            </h1>
-            <h1 className="font-como text-[28px] font-medium not-italic">
-              WE OFFER TO OUR CLIENTS,
-            </h1>
-            <h1 className="font-como text-[28px] font-medium not-italic">
-              PROPERTIES WITH
-            </h1>
-            <h1 className="font-como text-[28px] font-medium not-italic">
-              COMPETITIVE AS WELL AS
-            </h1>
-            <h1 className="font-como text-[28px] font-medium not-italic">
-              AFFORDABLE PRICING.
-            </h1>
+            <p className="font-como text-[28px] font-medium not-italic" data-aos="fade-right">
+              WE PRIDE OURSELVES AS <br /> LEADERS IN THE PROPERTY <br /> DEVELOPMENT INDUSTRY AS <br /> WE OFFER TO OUR CLIENTS,<br /> PROPERTIES WITH <br />COMPETITIVE AS WELL AS  <br />AFFORDABLE PRICING.
+            </p>
           </div>
-          <div className="flex  relative ">
+          <div className="flex  relative " data-aos="zoom-in">
             <img className="" src={asset2} alt="" />
             <img
               className="mr-[10%] absolute -right-80 top-32"
@@ -166,7 +148,7 @@ export const Home = () => {
         <div id="redbg">
           <img className="" alt="" />
           <div className="grid place-items-center py-32 ">
-            <h1 className="text-white font-como Garamond text-6xl not-italic font-normal tracking-widest">
+            <h1 className="text-white font-como Garamond text-6xl not-italic font-normal tracking-widest" data-aos="fade-right">
               SCHEDULE A TOUR
             </h1>
             <h1 className="text-white tracking-widest pt-8 font-rale">

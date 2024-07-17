@@ -3,7 +3,7 @@ import React from "react";
 const story = () => {
   return (
     <div>
-      <h1 className="text-6xl text-black flex justify-center pt-[2%] font-como">
+      <h1 className="text-6xl text-black flex justify-center pt-[2%] font-como" data-aos="fade-down">
         THE ELTAN STORY
       </h1>
       <div className=" flex h-0.5 w-[80%] items-center ml-[10%] mt-2 justify-center bg-[#2e3a1a] "></div>
